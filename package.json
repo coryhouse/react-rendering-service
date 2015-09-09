@@ -1,0 +1,20 @@
+{
+  "name": "node-react-server",
+  "version": "1.0.0",
+  "description": "Serves rendered React components",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "buildMvc": "browserify -t reactify -r react -r ./components/App > ../MVC/MVCApp/Scripts/bundle.js",
+    "buildWebForms": "browserify -t reactify -r react -r ./components/App > ../WebForms/DotNetConsumingReactService/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "browserify": "^3.38.0",
+    "envify": "^3.0.0",
+    "express": "^4.12.3",
+    "node-jsx": "^0.13.3",
+    "react": "^0.13.0",
+    "reactify": "^1.0.0"
+  }
+}
