@@ -3,7 +3,7 @@
 Imagine you're currently working in a server-side technology like ASP.NET, Ruby, Python, Java, whatever. You'd like to use React, but you need to render [isomorphically](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/). This is a simple web service that accepts GET requests for the following:
 
 1. Path to the component you'd like to render  
-2. Props for the said component (as URL encoded JSON)  
+2. Props for the component (as URL encoded JSON)  
 
 It then returns the resulting HTML. This means you can begin using React with any server-side tech. 
 
